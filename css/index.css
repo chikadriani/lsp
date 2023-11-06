@@ -1,0 +1,7 @@
+:root{
+    --primary-color: #BFFF00;
+}
+
+.bg-hijau-pupus{
+    background-color: var(--primary-color);
+}
