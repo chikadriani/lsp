@@ -130,8 +130,7 @@
                                 <form class="form-inline mr-auto w-100 navbar-search">
                                     <div class="input-group">
                                         <input type="text" class="form-control bg-light border-0 small"
-                                            placeholder="Search for..." aria-label="Search"
-                                            aria-describedby="basic-addon2">
+                                            value="Search for..." aria-label="Search" aria-describedby="basic-addon2">
                                         <div class="input-group-append">
                                             <button class="btn btn-primary" type="button">
                                                 <i class="fas fa-search fa-sm"></i>
@@ -184,59 +183,114 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Kelola Asesor</h1>
-                        <a href="asesor_tambah.html" class="d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-plus fa-sm text-white-50 mr-2"></i>Tambah Data</a>
+                        <h1 class="h3 mb-0 text-gray-800">Form Update Asesor</h1>
+                        <a href="index.html" class="d-none d-sm-inline-block btn btn-sm btn-danger shadow-sm"><i
+                                class="fas fa-times-circle fa-sm text-white-50 mr-2"></i>Kembali</a>
                     </div>
 
 
-                    <!-- table -->
-                    <div class="table-responsive-xl">
-                        <table class="table">
-                            <thead class="thead-light">
-                                <tr>
-                                    <th scope="col">No.</th>
-                                    <th scope="col">Nama</th>
-                                    <th scope="col">No MET</th>
-                                    <th scope="col">Kompetensi</th>
-                                    <th scope="col">Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Vina</td>
-                                    <td>MET.000.005335 2017</td>
-                                    <td>
-                                        <p>1. Dasar Pemrograman</p>
-                                        <p>2. Pemgrograman Web</p>
-                                        <p>3. Pemrograman Object</p>
-                                    </td>
-                                    <td>
-                                        <a class="mr-3" href=""><i class="fas fa-eye"></i></a>
-                                        <a class="mr-3" href="asesor_update.html"><i class="fas fa-edit"></i></a>
-                                        <a class="mr-3" href=""><i class="fas fa-trash"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Yosua Hercules Siburian</td>
-                                    <td>MET.000.005335 2017</td>
-                                    <td>
-                                        <p>1. Dasar Pemrograman</p>
-                                        <p>2. Pemgrograman Web</p>
-                                        <p>3. Pemrograman Object</p>
-                                    </td>
-                                    <td>
-                                        <a class="mr-3" href=""><i class="fas fa-eye"></i></a>
-                                        <a class="mr-3" href=""><i class="fas fa-edit"></i></a>
-                                        <a class="mr-3" href=""><i class="fas fa-trash"></i></a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <!-- Form -->
+                    <form>
+                        <!-- Id -->
+                        <div class="form-group row">
+                            <div class="col-sm-10">
+                                <input type="hidden" class="form-control" id="inputId" value="Id">
+                            </div>
+                        </div>
+                        <!-- Nama -->
+                        <div class="form-group row">
+                            <label for="inputNama" class="col-sm-2 col-form-label">Nama</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputNama" value="Nama">
+                            </div>
+                        </div>
+                        <!-- No MET -->
+                        <div class="form-group row">
+                            <label for="inputNoMet" class="col-sm-2 col-form-label">No MET</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputNoMet" value="No MET">
+                            </div>
+                        </div>
+                        <!-- Kompetensi1 -->
+                        <div class="form-group row">
+                            <label for="inputKompetensi1" class="col-sm-2 col-form-label">Kompetensi 1</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputKompetensi1" value="Kompetensi 1">
+                            </div>
+                        </div>
+                        <!-- Kompetensi2 -->
+                        <div class="form-group row">
+                            <label for="inputKompetensi2" class="col-sm-2 col-form-label">Kompetensi 2</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputKompetensi2" value="Kompetensi 2">
+                            </div>
+                        </div>
+                        <!-- Kompetensi3 -->
+                        <div class="form-group row">
+                            <label for="inputKompetensi3" class="col-sm-2 col-form-label">Kompetensi 3</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputKompetensi3" value="Kompetensi 3">
+                            </div>
+                        </div>
+                        <!-- Kompetensi4 -->
+                        <div class="form-group row">
+                            <label for="inputKompetensi4" class="col-sm-2 col-form-label">Kompetensi 4</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputKompetensi4" value="Kompetensi 4">
+                            </div>
+                        </div>
+                        <!-- Kompetensi5 -->
+                        <div class="form-group row">
+                            <label for="inputKompetensi5" class="col-sm-2 col-form-label">Kompetensi 5</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputKompetensi5" value="Kompetensi 5">
+                            </div>
+                        </div>
+                        <!-- Tanda Tangan -->
+                        <div class="form-group row">
+                            <label class="col-sm-2" for="inputTTD">Tanda Tangan</label>
+                            <div class="col-sm-10">
+                                <input type="file" class="form-control-file" id="inputTTD">
+                            </div>
+                        </div>
+                        <!-- Foto -->
+                        <div class="form-group row">
+                            <label class="col-sm-2" for="Foto">Foto</label>
+                            <div class="col-sm-10">
+                                <input type="file" class="form-control-file" id="Foto">
+                            </div>
+                        </div>
+                        <!-- Username -->
+                        <div class="form-group row">
+                            <label class="col-sm-2" for="Username">Username</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="Username" value="Username">
+                            </div>
+                        </div>
+                        <!-- Password -->
+                        <div class="form-group row">
+                            <label class="col-sm-2" for="Password">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="Password" value="Password">
+                            </div>
+                        </div>
+                        <!-- Action -->
+                        <div class="form-group row">
+                            <div class="col-sm-6">
 
-                    </div>
+                            </div>
+                            <div class="col-sm-3 mt-4">
+                                <a href="index.html" style="width: 100%;"
+                                    class="d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                        class="fas fa-upload fa-sm text-white-50 mr-2"></i>Update</a>
+                            </div>
+                            <div class="col-sm-3 mt-4">
+                                <a href="index.html" style="width: 100%;"
+                                    class="d-sm-inline-block btn btn-sm btn-danger shadow-sm"><i
+                                        class="fas fa-times-circle fa-sm text-white-50 mr-2"></i>Kembali</a>
+                            </div>
+                        </div>
+                    </form>
                 </div>
                 <!-- /.container-fluid -->
 
