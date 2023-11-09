@@ -5,3 +5,16 @@
 .bg-hijau-pupus{
     background-color: var(--primary-color);
 }
+
+.select-list {
+    cursor: pointer;
+}
+
+a.input-group-text {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.input-group-text:hover {
+    color: #333;
+}
